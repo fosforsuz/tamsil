@@ -6,7 +6,8 @@ import { useMediaQuery } from "../hooks/useMediaQuery";
 export const Navbar = () => {
     const [toggled, setToggled] = useState(false);
     const matches = useMediaQuery("(min-width: 560px)");
-    console.log(matches);
+
+
     return (
         <nav className="relative mx-8 mb-24 flex justify-between items-center pt-12 pb-6 font-medium md:mx-16 lg:mx-32">
             <svg
@@ -42,11 +43,11 @@ export const Navbar = () => {
                         className="block h-0.5 w-8 bg-black"
                     />
                     <motion.span
-                        animate={{ rotateZ: toggled ? 45 : 0, y: toggled ? 8 : 0 }}
+                        animate={{width: toggled ? 0 : 24}}
                         className="block h-0.5 w-6 bg-black"
                     />
                     <motion.span
-                        animate={{ rotateZ: toggled ? 45 : 0, y: toggled ? 8 : 0 }}
+                        animate={{ rotateZ: toggled ? -45 : 0, y: toggled ? -8 : 0, width: toggled ? 32 : 16 }}
                         className="block h-0.5 w-4 bg-black"
                     />
                 </div>}
