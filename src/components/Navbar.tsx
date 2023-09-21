@@ -35,16 +35,6 @@ export const Navbar = () => {
 
     return (
         <nav className="relative mx-8  flex justify-between items-center border-b-2 pt-6 pb-6 font-medium md:mx-16 lg:mx-32">
-            {/* <svg
-                className="absolute bottom-0 left-1/2 -translate-x-1/2"
-                width={250}
-                height={4}
-                viewBox="0 0 250 4"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-            >
-                <path d="M2 2L428 2" stroke="#282828" strokeLinecap="round" />
-            </svg> */}
             <div>
                 <img src={logo.src} alt="logo" className="w-[100x] h-[125px]" />
             </div>

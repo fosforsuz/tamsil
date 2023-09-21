@@ -33,7 +33,7 @@ export function useMediaQuery(query: string): boolean {
                 matchMedia.removeListener(handleChange)
             } else {
                 matchMedia.removeEventListener('change', handleChange)
-            }
+            } 
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [query])
